@@ -35,7 +35,7 @@
 // no performance loss.  However, you can define LUA_DWORD_ALIGNED_TVALUES and
 // this will force 16 byte TValues on FP builds.
 
-//#define LUA_NUMBER_INTEGRAL
+#define LUA_NUMBER_INTEGRAL
 //#define LUA_DWORD_ALIGNED_TVALUES
 
 
@@ -45,7 +45,7 @@
 // the size of the store that you need.  This can be any multiple of 4kB up to
 // a maximum 256Kb.
 
-//#define LUA_FLASH_STORE 0x10000
+#define LUA_FLASH_STORE 0x32768
 
 
 // By default Lua executes the file init.lua at start up.  The following
